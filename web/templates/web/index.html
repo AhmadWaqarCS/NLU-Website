@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NLU</title>
+</head>
+<body>
+
+	<form method="POST">
+		{% csrf_token %}
+		<h3>enter value here: </h3>
+		<select name="type">
+			<option value="spell">Spell</option>
+		</select>
+		<input type="text" name="value">
+		<input type="submit">
+	</form>
+
+	<p>{{ answer }}</p>
+
+</body>
+</html>
