@@ -2,10 +2,22 @@
 <html>
 <head>
 	<title>NLU</title>
+	<style>
+		body {
+			background: #050505;
+		}
+		.form {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background: #ff5555;
+		}
+	</style>
 </head>
 <body>
 
-	<form method="POST">
+	<form method="POST" class="form">
 		{% csrf_token %}
 		<h3>enter value here: </h3>
 		<select name="type">
